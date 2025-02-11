@@ -12,7 +12,6 @@ const Navbar = () => {
       </div>
       <div className={styles.navButtons}>
         <Link href="/addTrip">Add Trip</Link>
-        <Link href="/addActivity">Add Trip Activity</Link>
       </div>
     </div>
   );

@@ -7,10 +7,6 @@ const TravelApi = {
     getTrip: () => axios.get(`${serverURL}/api/trip`),
 
     postTrip: (payload) => axios.post(`${serverURL}/api/trip`, payload),
-
-    getActivity: () => axios.get(`${serverURL}/api/activity`),
-
-    postActivity: (payload) => axios.post(`${serverURL}/api/activity`, payload)
 }
 
 export default TravelApi;
