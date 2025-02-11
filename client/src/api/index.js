@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// Use the port number that is defined in your .env file
+// Add your EC2 connection link
 const serverURL = `https://hackschool-fa24-solutions.onrender.com`;
 
 const TravelApi = {
