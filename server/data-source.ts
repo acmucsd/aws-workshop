@@ -1,5 +1,4 @@
 import { DataSource } from 'typeorm';
-import { Activity } from './models/activityModel';
 import { Trip } from './models/tripModel';
 import dotenv from 'dotenv';
 
@@ -15,7 +14,7 @@ const AppDataSource = new DataSource({
     database: process.env.DB_NAME,
     synchronize: true,
     logging: false,
-    entities: [Activity, Trip],
+    entities: [Trip],
     migrations: [],
     subscribers: [],
 });

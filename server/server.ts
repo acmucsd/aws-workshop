@@ -2,6 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import { AppDataSource } from './data-source'; // Import your DataSource configuration
 import router from './routes/tripRoutes.js';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 // Create an Express server
 const server = express();
@@ -22,6 +25,6 @@ AppDataSource.initialize()
     });
 
 // Start the server
-server.listen(4000, () => {
-    console.log("Server started on PORT 4000");
+server.listen(process.env.PORT, () => {
+    console.log("Server started on PORT");
 });
